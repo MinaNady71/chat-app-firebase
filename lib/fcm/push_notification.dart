@@ -1,12 +1,10 @@
 
 
-import 'package:chat_app_firebase/components/component.dart';
 import 'package:chat_app_firebase/cubit/cubit.dart';
-import 'package:chat_app_firebase/screens/chat__friends_screen_details.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 
 class FCM{
-
+//test branch
 static  initializeMessage(context) async{
   var  cubit = ChatCubit.get(context);
    await   FirebaseMessaging.instance.getInitialMessage();
